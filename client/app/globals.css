@@ -35,23 +35,34 @@ body {
 @layer base{
   @font-face {
     font-family: "Satoshi";
-    src: url(/client/fonts/Satoshi-Regular.ttf);
+    src: url(/fonts/Satoshi-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Integral";
+    src: url(/fonts/Integralcf-regular.otf);
+  }
+  @font-face {
+    font-family: "IntegralBold";
+    src: url(/fonts/Integralcf-bold.otf);
   }
 }
-.searchLabel{
-  position: absolute;
-  padding: 5px 0px 5px 5px;
-  color: rgb(87, 87, 87);
-}
-.search{
-  
+
+.searchBox{
   display: flex;
-  justify-content: center;
+  width: 300px;
+  gap: 3px;
+  padding: 10px;
   align-items: center;
-  width: 500px;
   background-color: rgb(239, 239, 239);
-  border: none;
-  outline: none;
-  padding: 10px 0px 10px 30px;
   border-radius: 100px;
+}
+
+/*                    Landing Screen              */
+.landingScreen{
+  background-color: #F2F0F1;
+}
+.graphics:nth-child(1){
+  position: absolute;
+  top: 0;
+
 }
