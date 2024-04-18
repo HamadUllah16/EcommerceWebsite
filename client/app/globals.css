@@ -64,10 +64,11 @@ body {
   position: absolute;
   top: 30px;
   background-color: white;
-  left: -55px;
-  width: fit-content !important;
+  left: 0;
+  width: auto;
   border: 1px solid rgba(119, 117, 117, 0.599);
   border-radius: 6px;
+  text-wrap: nowrap;
 }
 .dropdown > a{
   transition: 0.2s ease;

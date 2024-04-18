@@ -23,9 +23,9 @@ function Nav() {
                 <article className='flex justify-center items-center gap-5'>
                     <article className='flex gap-1'>
                         <Dropdown title={"Shop"} items={["Tops", "Bottoms & SleepWear", "Activewear", "Footwear"]} />
-                        <Link href={"/sale"} className='nav-btn'>On Sale</Link>
-                        <Link href={"/new-arrivals"} className='nav-btn'>New Arrivals</Link>
-                        <Link href={"/brands"} className='nav-btn'>Brands</Link>
+                        <Link href={"/sale"} className='nav-btn text-nowrap'>On Sale</Link>
+                        <Link href={"/new-arrivals"} className='nav-btn text-nowrap'>New Arrivals</Link>
+                        <Link href={"/brands"} className='nav-btn text-nowrap'>Brands</Link>
                     </article>
                     <Search />
                     <ul className="flex gap-1">

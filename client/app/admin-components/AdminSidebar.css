@@ -1,0 +1,33 @@
+.sidebar{
+    width: 4vw;
+    overflow: hidden;
+    transition: all;
+}
+.menuOpen{
+    transition: all;
+    transform: scale(0);
+}
+
+.menuClose{
+    transition: all;
+}
+
+.sidebar:hover .menuClose{
+    display: none;
+}
+.sidebar:hover .menuOpen{
+    transform: scale(1);
+}
+
+.sidebar:hover{
+    width: 20%;
+}
+
+.sidebar a{
+    display: flex;
+    gap: 15px;
+    transition: all;
+}
+.sidebar:hover a{
+    gap: 5px;
+}

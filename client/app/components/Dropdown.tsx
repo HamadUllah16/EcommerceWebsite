@@ -13,7 +13,7 @@ const Dropdown: React.FC<dropdownType> = ({ title, items }) => {
     return (
 
         <div onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} className="flex items-center relative">
-            <label className="dropdownLabel">{title}<KeyboardArrowDownIcon style={{ rotate: show ? "0deg" : "180deg", transition: "0.3s ease" }} /></label>
+            <label className="text-nowrap">{title}<KeyboardArrowDownIcon style={{ rotate: show ? "0deg" : "180deg", transition: "0.3s ease" }} /></label>
             <AnimatePresence>
                 {show &&
                     <motion.div
