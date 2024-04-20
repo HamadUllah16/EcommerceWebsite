@@ -8,29 +8,29 @@ interface Style {
 }
 
 const styles: Style = {
-    header: "font-extrabold uppercase text-7xl",
+    header: "font-extrabold uppercase text-5xl md:text-7xl",
     title: "font-bold text-4xl",
     description: "font-satoshi opacity-60"
 }
 
 function LandingScreen() {
     return (
-        <section className="landingScreen p-20">
-            <section className="container mx-auto grid grid-cols-2">
-                <article className="flex flex-col gap-7">
+        <section className="landingScreen py-10 px-5 md:p-20">
+            <section className="container mx-auto grid grid-col-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
+                <article className="flex flex-col gap-2">
                     <h1 className={styles.header} >Find Clothes That Matches Your Style</h1>
                     <p className="font-satoshi  opacity-60">Browse through our diverse range of melticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-                    <a className="bg-black w-52 p-3 rounded-full text-center text-white">Shop Now</a>
-                    <article className="grid grid-cols-3">
-                        <div>
+                    <a className="bg-black w-full md:w-52 lg:w-52 xl:w-52 2xl:w-52 p-3 rounded-full text-center text-white">Shop Now</a>
+                    <article className="grid grid-cols-2 justify-center gap-4 md:flex lg:flex xl:flex 2xl:flex md:justify-start lg:justify-start xl:justify-start 2xl:justify-start">
+                        <div className="flex justify-center flex-col items-center">
                             <h3 className={styles.title}>200+</h3>
                             <p className={styles.description}>International Brands</p>
                         </div>
-                        <div>
+                        <div className="flex justify-center flex-col items-center">
                             <h3 className={styles.title}>2,000+</h3>
                             <p className={styles.description}>High-Quality Products</p>
                         </div>
-                        <div>
+                        <div className="col-span-2 justify-center items-center flex flex-col">
                             <h3 className={styles.title}>30,000+</h3>
                             <p className={styles.description}>Happy Customers</p>
                         </div>

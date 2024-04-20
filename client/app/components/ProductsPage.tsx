@@ -2,7 +2,7 @@ import Products from "./Products"
 
 function ProductsPage({ title }: { title: string }) {
     return (
-        <section className="container mx-auto flex flex-col py-14 gap-16">
+        <section className="container mx-auto flex flex-col py-24 gap-16">
             <div className="flex justify-center">
                 <h1 className="font-extrabold uppercase text-5xl">{title}</h1>
             </div>

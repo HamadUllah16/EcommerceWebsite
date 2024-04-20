@@ -1,11 +1,10 @@
-import Sidebar from "./components/Sidebar";
 import Nav from "./components/Nav";
 import ProductsPage from "./components/ProductsPage";
 import SignUpNoti from "./components/SignUpNoti";
-import { motion } from "framer-motion"
 import LandingScreen from "./components/LandingScreen";
 import BrandsPanel from "./components/BrandsPanel";
 import Categories from "./components/Categories";
+import CustomerReviews from "./components/CustomerReviews";
 
 export default function Home() {
   return (
@@ -18,6 +17,7 @@ export default function Home() {
       <hr></hr>
       <ProductsPage title={"Top Selling"} />
       <Categories />
+      <CustomerReviews />
     </>
   );
 }

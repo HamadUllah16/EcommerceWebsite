@@ -19,7 +19,7 @@ function Products() {
                     return (
                         <div key={index} className="flex flex-col gap-3 rounded">
                             <div className="flex border p-5 rounded-lg justify-center" style={{ backgroundColor: "#f0eeed" }}>
-                                <Image src={item.image} width={300} height={150} alt="a product picture" />
+                                <Image className="drop-shadow-lg" src={item.image} width={300} height={150} alt="a product picture" />
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg">{item.name}</h3>
