@@ -21,7 +21,7 @@ function CustomerReviews() {
                 {
                     reviews.map((item, index) => {
                         return (
-                            <article className='flex flex-col gap-3 border rounded-2xl p-5 h-60 w-auto'>
+                            <article key={index} className='flex flex-col gap-3 border rounded-2xl p-5 h-60 w-auto'>
                                 <GenerateStars item={item.rating} />
                                 <div className='flex flex-col gap-2'>
                                     <h3 className='font-bold text-lg'>{item.name}</h3>
