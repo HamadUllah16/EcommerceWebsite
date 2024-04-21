@@ -105,4 +105,9 @@ body {
   justify-content: end;
 }
 
+.logos svg{
+  height: 100px;
+  color: red;
+  object-fit: contain;
 
+}

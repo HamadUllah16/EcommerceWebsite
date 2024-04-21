@@ -1,24 +1,16 @@
+import Link from 'next/link'
 import React from 'react'
+import Dropdown from './Dropdown'
 
-function Sidebar() {
+function Sidebar({ visible }: { visible: boolean }) {
     return (
-        <section className=" bg-slate-200 flex-row w-80 ">
-            <h3 className='w-full text-center bg-slate-500 text-white py-2 text-lg'>All Categories</h3>
-            <div className="flex p-5 gap-2 align-middle h-full border-b-2 border-slate-500 w-full">
-                <p>Computers</p>
-            </div>
-            <div className="flex p-5 gap-2 align-middle h-full border-b-2 border-slate-500 w-full">
-                <p>Computers</p>
-            </div>
-            <div className="flex p-5 gap-2 align-middle h-full border-b-2 border-slate-500 w-full">
-                <p>Computers</p>
-            </div>
-            <div className="flex p-5 gap-2 align-middle h-full border-b-2 border-slate-500 w-full">
-                <p>Computers</p>
-            </div>
-            <div className="flex p-5 gap-2 align-middle h-full border-b-2 border-slate-500 w-full">
-                <p>Computers</p>
-            </div>
+        <section className={`flex shadow-lg top-14 lg:hidden xl:hidden 2xl:hidden flex-col fixed z-50 ${visible ? "w-80" : "w-0"} py-1  h-screen bg-white text-lg overflow-hidden transition-all`}>
+            <section className='container mx-auto p-5 flex '>
+            </section>
+            <Dropdown title={"Shop"} items={["Tops", "Bottoms & SleepWear", "Activewear", "Footwear"]} />
+            <Link href={"/sale"} className='nav-btn text-nowrap'>On Sale</Link>
+            <Link href={"/new-arrivals"} className='nav-btn text-nowrap'>New Arrivals</Link>
+            <Link href={"/brands"} className='nav-btn text-nowrap'>Brands</Link>
         </section>
     )
 }

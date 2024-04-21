@@ -9,7 +9,7 @@ import CustomerReviews from "./components/CustomerReviews";
 export default function Home() {
   return (
     <>
-      <SignUpNoti />
+      {/* <SignUpNoti /> */}
       <Nav />
       <LandingScreen />
       <BrandsPanel />

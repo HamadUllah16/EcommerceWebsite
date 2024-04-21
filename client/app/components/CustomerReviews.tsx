@@ -13,11 +13,11 @@ const reviews: reviewType[] = [
 function CustomerReviews() {
     return (
         <section className='flex flex-col gap-8 container mx-auto py-24'>
-            <article className='flex justify-between'>
-                <h1 className='uppercase text-5xl font-extrabold'>Our Happy Customers</h1>
+            <article className='flex p-4 md:p-0 lg:p-0 xl:p-0 2xl:p-0 justify-between'>
+                <h1 className='uppercase text-4xl md:text-5xl font-extrabold'>Our Happy Customers</h1>
                 <CarousalButtons />
             </article>
-            <article className='flex gap-3 overflow-visible'>
+            <article className='flex flex-col p-4 md:flex-row lg:flex-row xl:flex-row 2xl:flex-row gap-3 overflow-visible'>
                 {
                     reviews.map((item, index) => {
                         return (

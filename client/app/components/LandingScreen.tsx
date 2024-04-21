@@ -8,7 +8,7 @@ interface Style {
 }
 
 const styles: Style = {
-    header: "font-extrabold uppercase text-5xl md:text-7xl",
+    header: "font-extrabold uppercase text-4xl md:text-7xl",
     title: "font-bold text-4xl",
     description: "font-satoshi opacity-60"
 }
@@ -17,7 +17,7 @@ function LandingScreen() {
     return (
         <section className="landingScreen py-10 px-5 md:p-20">
             <section className="container mx-auto grid grid-col-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
-                <article className="flex flex-col gap-2">
+                <article className="flex flex-col gap-2 md:gap-10">
                     <h1 className={styles.header} >Find Clothes That Matches Your Style</h1>
                     <p className="font-satoshi  opacity-60">Browse through our diverse range of melticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
                     <a className="bg-black w-full md:w-52 lg:w-52 xl:w-52 2xl:w-52 p-3 rounded-full text-center text-white">Shop Now</a>
@@ -42,8 +42,8 @@ function LandingScreen() {
                             <path d="M0.000565624 51.7439C27.9639 50.1162 50.3531 27.9468 52.256 0.000633812C53.8837 27.9642 76.0531 50.353 103.999 52.2561C76.0358 53.8837 53.6469 76.0534 51.7439 103.999C50.1163 76.036 27.9465 53.6469 0.000565624 51.7439Z" fill="black" />
                         </svg>
                     </div>
-                    <div className="flex justify-center items-center">
-                        <Image src={banner} alt="home page banner" style={{ minWidth: "400px", height: "100%", objectFit: "contain" }} />
+                    <div className="flex justify-center relative">
+                        <Image src={banner} alt="home page banner" fill={false} className="object-cover overflow-hidden" />
                     </div>
                     <div>
                         <svg width="56" height="56" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
