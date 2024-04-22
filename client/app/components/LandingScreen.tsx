@@ -1,5 +1,7 @@
-import Image from "next/image"
+"use client"
+import Image from "next/image";
 import banner from "/public/homepage-banner.png";
+import { motion } from "framer-motion";
 
 interface Style {
     header: string,
@@ -18,7 +20,7 @@ function LandingScreen() {
         <section className="landingScreen py-10 px-5 md:p-20">
             <section className="container mx-auto grid grid-col-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
                 <article className="flex flex-col gap-2 md:gap-10">
-                    <h1 className={styles.header} >Find Clothes That Matches Your Style</h1>
+                    <motion.h1 className={styles.header} >Find Clothes That Matches Your Style</motion.h1>
                     <p className="font-satoshi  opacity-60">Browse through our diverse range of melticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
                     <a className="bg-black w-full md:w-52 lg:w-52 xl:w-52 2xl:w-52 p-3 rounded-full text-center text-white">Shop Now</a>
                     <article className="grid grid-cols-2 justify-center gap-4 md:flex lg:flex xl:flex 2xl:flex md:justify-start lg:justify-start xl:justify-start 2xl:justify-start">

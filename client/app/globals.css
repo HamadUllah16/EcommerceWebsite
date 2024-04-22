@@ -107,7 +107,9 @@ body {
 
 .logos svg{
   height: 100px;
-  color: red;
   object-fit: contain;
+}
 
+.secondary-text{
+  color: #848484;
 }

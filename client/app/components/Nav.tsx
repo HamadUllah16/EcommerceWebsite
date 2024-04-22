@@ -1,5 +1,5 @@
 "use client"
-import { Opacity, ShoppingCart } from '@mui/icons-material';
+import { ShoppingCart } from '@mui/icons-material';
 import PersonIcon from '@mui/icons-material/Person';
 import Link from 'next/link';
 import Dropdown from './Dropdown';
@@ -23,7 +23,11 @@ function Nav() {
         <>
             <Sidebar visible={visible} />
             <nav className="bg-white fixed w-full z-50 top-0 lg:relative shadow-lg">
-                <motion.section initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className='container mx-auto p-5 gap-5 flex justify-between md:justify-between lg:justify-center xl:justify-center 2xl:justify-center'>
+                <motion.section
+                    initial={{ y: -100, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    className='container mx-auto p-5 gap-5 flex justify-between md:justify-between lg:justify-center xl:justify-center 2xl:justify-center'
+                >
                     <div className='flex gap-2 items-center transition-all'>
                         <MenuButton open={visible ? true : false} visible={visible} setVisible={setVisible} />
                         <h3 className='text-2xl font-extrabold'>SHOP.CO</h3>

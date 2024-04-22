@@ -5,8 +5,17 @@ function MenuButton({ open, visible, setVisible }: { open: boolean, visible: boo
 
     return (
         <button onClick={() => setVisible(!visible)} className={`visible xl:hidden 2xl:hidden lg:hidden`}>
-            {open ? <MenuOpen className='transition-all' /> : <Menu className='transition-all' />}
-        </button>
+            {
+                open ?
+                    <span>
+                        <MenuOpen />
+                    </span>
+                    :
+                    <span>
+                        <Menu />
+                    </span>
+            }
+        </button >
     )
 }
 

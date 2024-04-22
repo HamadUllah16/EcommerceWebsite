@@ -5,6 +5,7 @@ import LandingScreen from "./components/LandingScreen";
 import BrandsPanel from "./components/BrandsPanel";
 import Categories from "./components/Categories";
 import CustomerReviews from "./components/CustomerReviews";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ProductsPage title={"Top Selling"} />
       <Categories />
       <CustomerReviews />
+      <Footer />
     </>
   );
 }
