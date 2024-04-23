@@ -12,7 +12,7 @@ const reviews: reviewType[] = [
 
 function CustomerReviews() {
     return (
-        <section className='flex flex-col gap-8 container mx-auto py-24'>
+        <section className='flex flex-col gap-8 container mx-auto py-24 mb-16 md:mb-24'>
             <article className='flex p-4 md:p-0 lg:p-0 xl:p-0 2xl:p-0 justify-between'>
                 <h1 className='uppercase text-4xl md:text-5xl font-extrabold'>Our Happy Customers</h1>
                 <CarousalButtons />
